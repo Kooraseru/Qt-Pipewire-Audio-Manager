@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Plasma Audio Manager
+Comment=Manage audio devices and virtual cables
+Exec=pam-gui
+Icon=audio-card
+Terminal=false
+Categories=AudioVideo;Audio;Qt;KDE;

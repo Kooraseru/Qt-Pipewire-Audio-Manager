@@ -1,0 +1,22 @@
+# Managed by Plasma Audio Manager tools/update.py
+[Unit]
+Description=Plasma Audio Manager backend
+After=pipewire.service wireplumber.service
+PartOf=graphical-session.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=dbus
+BusName=org.plasmaaudiomanager.Prototype1
+ExecStart=%h/.local/libexec/plasma-audio-manager/pam-backend
+WorkingDirectory=%h
+Restart=on-failure
+RestartSec=3s
+TimeoutStartSec=15s
+TimeoutStopSec=10s
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=plasma-audio-manager
+
+[Install]
+WantedBy=graphical-session.target

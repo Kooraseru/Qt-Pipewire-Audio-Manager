@@ -1,0 +1,12 @@
+{
+    "KPlugin": {
+        "Id": "org.kooraseru.plasma.audiomanager",
+        "Name": "Plasma Audio Manager",
+        "Description": "Devices, virtual cables and application audio streams",
+        "Icon": "audio-card",
+        "Version": "0.2.0",
+        "Category": "Multimedia"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
